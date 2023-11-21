@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  overflow-x:clip;
+  box-sizing: border-box;
+}
+
+.baseContainer{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.topBar{
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  height: 10vh;
+  border-bottom: 1px solid #f1f3f4;
+  position: relative;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+
+}
+
+.sideBarContainer{
+  width: 100vw;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.sideBar{
+  width: 300px;
+  /* background-color: #FEEFC3; */
+  max-height: 90vh;
+  /* overflow: hidden; */
+  position: sticky;
+  top: 10vh;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+ 
+}
+
+.sideBarLink{
+  max-width: 100%;
+  padding: 15px 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 5px;
+
+}
+.sideBarLink>span{
+  margin-left: 40px;
+  color: #2D263A;
+  font-weight: 600;
+}
+
+.sideBarLink:hover{
+  background-color: #F1F3F4;
+}
+.sideBarLink:focus{
+  background-color: #FEEFC3;
+}
+
+.topBar-baseStyle{
+  height: 100%;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  /* padding-left:30px ; */
+  width: 63px;
+  /* padding-left: 20px; */
+  justify-content: flex-end;
+
+}
+
+.menu-hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 45px;
+  border-radius: 50%;
+}
+.menu-hover:hover{
+  background-color:gainsboro;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo>i{
+  padding-left: 15px;
+}
+
+.logo>.logo-name{
+  padding-left: 15px;
+  font-weight: bold;
+  color: #5f6368;
+}
+
+.logoFirstLetter{
+  font-size: 24px;
+  color: green;
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+
+}
+
+.btn:focus{
+   background-color: #12b852;
+}
+.mainContainer{
+  width: 100%;
+  min-height: 90vh;
+}
+
+
+.note-container{
+  width: 100%;
+  min-height: 90vh;
+}
+
+.text-field-container{
+  text-align: center;
+  margin: 30px 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.note-text-field{
+  padding: 10px 5px;
+  width: 90%;
+  border: none;
+  overflow: auto;
+}
+
+.add-btn{
+  display: flex;
+  justify-content: end;
+  padding: 10px 10px 10px 0;
+}
+.update-btn{
+  display: flex;
+  justify-content: end;
+  padding: 10px 10px 10px 0;
+  gap: 5px;
+}
+.update-btn>Fab{
+
+}
+
+.text-click{
+  display: flex;
+  justify-content: start;
+  cursor: pointer;
+  /* height: 100%; */
+}
+.text-click>span{
+  padding: 0 0 0 30px;
+  font-weight: 600;
+}
+
+.text-click-2{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+
+}
+.text-click-2>input{
+  margin-top: 10px;
+  font-weight: 600;
+}
+.text-click-2>textarea{
+  font-weight: 550;
+}
+
+
+.noteee{
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 5px;
+  border: 1px solid #f1f3f4;
+  margin: 5px;
+  /* background-color: #fff; */
+}
+
+.noteee:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+.noteee>p{
+  
+  font-weight: 550;
+  font-size: 14px;
+}
+
+.noteee>b{
+  font-weight: 600;
+}
+
+
+/*Login*/
+
+
+.login-header{
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+}
+
+.login-header>span{
+  /* font-size: 30px; */
+  font-weight: 600;
+  /* padding-left: 30px; */
+  color: #5f6368;
+}
+
+.login-header>i{
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.login-input{
+  display: flex;
+  justify-content: center;
+  /* align-items: baseline; */
+  height: 90vh;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.bold-1>h1{
+  font-weight: 1000;
+  padding-bottom: 20px;
+}
+
+.login-btn{
+  margin:15px 0 15px 0;
+}
+
+.color-select{
+  color: inherit;
+  /* width: 20px; */
+}
+
+
+
+@media screen and (max-width: 400px) {
+  .sideBar{
+   /* position: fixed; */
+   /* background-color: #5f6368; */
+   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+   /* z-index: 5000; */
+   /* width: 300px !important; */
+  }
+  .mainContainer{
+    /* z-index: 1; */
+  }
+}

@@ -1,0 +1,29 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import AppProvider from './Context/AppProvider';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    
+    <AppProvider>
+      <App />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        closeOnClick
+        pauseOnFocusLoss
+        pauseOnHover
+        theme="light"
+      />
+          </AppProvider>
+
+  </React.StrictMode>
+);
+
+reportWebVitals();
