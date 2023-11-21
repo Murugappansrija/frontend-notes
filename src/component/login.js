@@ -142,9 +142,9 @@ export default function Login() {
                  
                 }}
               >
-                <p className="m-0 mt-4">For Demo:</p>
+                {/* <p className="m-0 mt-4">For Demo:</p>
                 <p className="m-0">Email: users@gmail.com</p>
-                <p className="m-0">Password: 12345678</p>
+                <p className="m-0">Password: 12345678</p> */}
               </div>
             </div>
           </div>
